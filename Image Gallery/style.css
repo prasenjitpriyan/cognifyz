@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100svh;
+}
+.upper {
+  height: 100svh;
+  background-color: cadetblue;
+}
+.intro {
+  text-align: center;
+  font-family: Arial;
+}
+
+h2 {
+  font-size: 36px;
+  padding-top: 30px;
+  color: white;
+}
+
+p {
+  font-size: 14pt;
+  padding: 20px;
+}
+
+#image-gallery {
+  width: 600px;
+  margin: 0 auto;
+}
+#current-image {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#image-thumbs {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.lower {
+  height: 100svh;
+  background-color: coral;
+  position: relative;
+}
+.image-slideshow {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
