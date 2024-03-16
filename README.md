@@ -1,2 +1,0 @@
-# cognifyz
-Web Development internship

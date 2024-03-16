@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: royalblue;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+.top {
+  background-color: transparent;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+  min-height: 20svh;
+}
+.top-left-container {
+  margin-right: 50px;
+  padding-left: 100px;
+  border-left: 2px solid white;
+  color: white;
+}
+.top-right-container {
+  padding: 20px;
+}
+.outer-circle {
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.inner-circle button {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: lightgray;
+  border: 2px solid white;
+  color: black;
+}
+.center {
+  padding: 20px;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 30vh;
+  border-bottom: 2px solid white;
+}
+.center h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.input {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input input {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+.input button {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+.result {
+  margin-top: 40px;
+}
